@@ -22,7 +22,7 @@ WIDTH = 600
 canvas = tk.Canvas(root,height=HEIGHT,width=WIDTH)
 canvas.pack()
 
-bg_img = tk.PhotoImage(file='D:/FILE/save-here/py/ADV/Tkinter/landscape.png')
+bg_img = tk.PhotoImage(file='landscape.png')
 bg_img_label = tk.Label(root,image=bg_img)
 bg_img_label.place(relwidth=1,relheight=1)
 
