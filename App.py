@@ -8,7 +8,7 @@ def get_weather(city):
     response = requests.get(url,params=params)
     weather = response.json()
     label['text'] = str(str(weather['data'][0]['city_name'])+', '+str(weather['data'][0]['country_code']) + '\n' +str(weather['data'][0]['weather']['description']) + '\n' + str(weather['data'][0]['temp']))
-    loc = 'D:/FILE/save-here/py/ADV/Tkinter/icons/'+str(weather['data'][0]['weather']['icon'])+'.png'
+    loc = 'icons/'+str(weather['data'][0]['weather']['icon'])+'.png'
     iconp = Image.open(loc)
     ico = ImageTk.PhotoImage(iconp)
     print(loc)
